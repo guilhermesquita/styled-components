@@ -1,12 +1,14 @@
+import {Div, Img} from '../Style'
+
 function CardVideo(props) {
-  function reproduzVideo(props) {
+  function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
   }
   return (
-    <div className="box-pagina-principal" onClick={reproduzVideo}>
-      <img src={props.image1} alt={props.textoAlternativo} />
+    <Div className='box-pagina-principal' onClick={reproduzVideo}>
+      <Img src={props.image1} alt={props.textoAlternativo} />
       <h4>{props.titulo}</h4>
-    </div>
+    </Div>
   );
 }
 
